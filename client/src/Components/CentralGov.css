@@ -9,7 +9,7 @@
   background-color: #333;
 background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -37,12 +37,12 @@ button {
 
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #536543;
+  background-color: #6bc020;
 }
 
 /* Styling for input fields */
@@ -52,7 +52,7 @@ input[type="text"] {
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 /* Styling for fund allocation and transfer sections */
@@ -64,7 +64,7 @@ input[type="text"] {
   padding: 20px ;
   background-color: #DBDFEA ;
   border: 1px solid wheat;
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 /*#E3FDFD*//*#ffffff*/
@@ -86,7 +86,7 @@ input[type="text"] {
   padding: 10px;
   background-color: #eaeaea;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 .accountDisplay h3,

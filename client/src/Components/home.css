@@ -1,8 +1,28 @@
 h1{
     text-align: center;
+    padding-top: 7px;
+    color: #ffffff;
 }
 
+.heading{
+}
 
+.homeText{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.Balance {
+  padding-left: 40px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  color: #d5ec2d;
+}
+
+.hierarchy{
+  text-align: center;
+  color: #ffffff;
+}
 
 .home-content {
   position: relative;
@@ -26,15 +46,16 @@ h1{
   font-size: 16px;
   border: none;
   border-radius: 5px;
-  background-color: #3498db;
+  background-color: #0d64bc;
   color: #fff;
   cursor: pointer;
   position: relative;
   transition: background-color 0.3s ease;
 }
-
+/*  */
 .button-group button:hover {
-  background-color: #2980b9;
+  background-color: #6bc020;
+  border-radius: 15px;
 }
 
 .homeText{

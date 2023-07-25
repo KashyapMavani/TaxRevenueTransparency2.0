@@ -1,9 +1,37 @@
 import React from "react";
-//import { Link } from 'react-router-dom';
 import "./home.css";
-
+// const { ethers } = require("ethers");
+// require('dotenv').config();
 
 const home = () => {
+
+// const INFURA_KEY = process.env.INFURA_KEY;
+// const network = "sepolia";
+// const provider = ethers.getDefaultProvider(network,{infura : INFURA_KEY});
+
+
+// const querryBlockchain = async (address) => {
+
+//   const CGBalance = await provider.getBalance(address);
+//   const balanceInEther = ethers.formatEther(CGBalance);
+//   console.log("Ethererum : ",balanceInEther);
+// //   console.log(CGBalance);
+// };
+
+// querryBlockchain("0xc9412F03CF8f483A3f5E79f16871ea9C7Dada33D"); // central
+// querryBlockchain("0x7e41530294092d856F3899Dd87A5756e00da1e7a"); // State
+// querryBlockchain("0x9cf7593eB463f6aDdaE5f8EbdCA1f581cc168292"); // District
+// querryBlockchain("0x18B29a2cD9F5D0415d1e71F3a8394FdAb34F0ba0"); // MLA
+// querryBlockchain("0xfC3401126235cA04036F3777bd38A171312DcD51"); // healthcare
+// querryBlockchain("0xBf38AA4207ec0ED062a22FaA3368615dfCA65848"); // transport
+// querryBlockchain("0x9427EDbFC3BA08ff28B4d509f7abd01C53Fc891a"); // Contractor
+// querryBlockchain("0xA9e11519D8B4408f0b9f965c0b05ad4A08784C02"); // material
+// querryBlockchain("0xA369648442859AfF75c6551ce853127F83A4f95D"); // labour
+
+
+
+
+
   const handleButtonClick = (path) => {
     window.location.href = path;
   };
@@ -11,10 +39,25 @@ const home = () => {
   return (
   <div>
     <div>
-            <h1 className="homeText">Track My Tax</h1>
+            <h1 className="heading">Track My Tax</h1>
             
     </div>
 
+    <h2 className="homeText">Balance of All Government Wallets :</h2>
+    <div className="Balance">
+        <div className="AllBalance">
+            <h4>State Government Wall4t Balance : {} ETH</h4>
+            <h4>Central Government Wallet Balance : {} ETH</h4>
+            <h4>District Government Wallet Balance : {} ETH</h4>
+            <h4>MLA's Wallet Balance : {} ETH</h4>
+            <h4>HealtCare Ministry Wallet Balance : {} ETH</h4>
+            <h4>Road & Transport Ministry Wallet Balance : {} ETH</h4>
+            <h4>Contrator's Wallet Balance : {} ETH</h4>
+            <h4>Material Supplier's Wallet Balance : {} ETH</h4>
+            <h4>Labour Supplier's Wallet Balance : {} ETH</h4>  
+        </div>
+    </div>
+   <div className="hierarchy"><h2>Hierarchy of Government Entities indicating flow of Funds</h2></div>
    <div className="home-content">
       <div className="button-group">
         <button onClick={() => handleButtonClick('/CentralGov')}>Central Gov</button>
@@ -60,88 +103,3 @@ const home = () => {
 };
 
 export default home;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// export default function home(){
-//     return (
-// <>
-{/* <div>
-            <h1>Track My Tax</h1>
-            <p>In today's world, financial transparency in government remains a significant challenge. Citizens often lack access to clear and up-to-date information about how their tax money is allocated and spent. This lack of transparency can lead to skepticism, mistrust, and even potential misuse of public funds.</p>
-            <p>Our project, TransparentGov, aims to address this critical issue by developing a decentralized application (DApp) that promotes financial transparency in government operations. The DApp leverages blockchain technology and smart contracts to create an immutable, tamper-resistant, and publicly accessible ledger of all government financial transactions.
-</p>
-            <p>Open and Accessible Data: TransparentGov will provide a user-friendly platform that grants citizens easy access to real-time financial data related to government budgeting and spending.: The DApp will foster citizen engagement by enabling public participation in the budgeting process.</p>
-            <p>Decentralization and Trust: By leveraging blockchain technology, TransparentGov will decentralize data storage, ensuring that financial records are free from centralized control and manipulation</p>
-        </div> */}
-
-//         <div className="home-content">
-//       <div className="home-dropdown">
-//         <select onChange={(e) => window.location.href = e.target.value}>
-//           <option value="">Sectors</option>
-//           {/* <option value="/home">Home</option> */}
-//           <option value="/CentralGov">Central Gov</option>
-//           <option value="/StateGov">State Gov</option>
-//           <option value="/DistrictGov">District Gov</option>
-//           <option value="/HealthCare">Health Care</option>
-//           <option value="/MLA">MLA</option>
-//           <option value="/Contractor">Contractor</option>
-//           <option value="/MaterialSupplier">Material Supplier</option>
-//           <option value="/LabourSupplier">Labour Supplier</option>
-//           <option value="/Roads&Transport">Road & Transport</option>
-//         </select>
-//       </div>
-//     </div>
-
-
-
-{/* <div className="home-content">
-        <ul className="home-list">
-          <li><Link to="/home">Home</Link></li>
-          <li><Link to="/CentralGov">Central Gov</Link></li>
-          <li><Link to="/StateGov">State Gov</Link></li>
-          <li><Link to="/DistrictGov">District Gov</Link></li>
-          <li><Link to="/HealthCare">Health Care</Link></li>
-          <li><Link to="/MLA">MLA</Link></li>
-          <li><Link to="/Roads">Road & Transport</Link></li>
-          <li><Link to="/HealthCare">Health Care</Link></li>
-          <li><Link to="/HealthCare">Health Care</Link></li>
-          <li><Link to="/HealthCare">Health Care</Link></li>
-          
-        </ul>
-        </div> */}
-        {/* {<div className="home-dropdown">
-          <select>
-            <option value="">Select Sectors</option>
-            <option value="./HealthCare">Health Care</option>
-            <option value="/LabourSupplier">Labour Supplier</option>
-            <option value="/MaterialSupplier">Material Supplier</option>
-            <option value="/MLA">MLA</option>
-            <option value="/Contractor">Contractor</option>
-            <option value="/Roads&Transport">Roads & Transport</option>
-          </select>
-        </div> } */}
-      
-
-        
-        
-// </>
-//     );
-// };
